@@ -1,0 +1,8 @@
+# Make a copy of this file in config/ without the .sample extension
+# and adjust settings below to taste.
+module EightyTwentyRuler
+  config.lactate_threshold = 160
+  config.folder = '/path/to/garmin/tcx/files'
+  config.pushover_token = 'xxx'
+  config.pushover_user_key = 'yyy'
+end
