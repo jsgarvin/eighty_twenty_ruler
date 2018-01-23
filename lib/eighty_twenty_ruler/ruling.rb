@@ -22,9 +22,9 @@ class Ruling
     <<MSG
 Lactate Threshold Set To: #{EightyTwentyRuler.config.lactate_threshold} BPM
 
-Last Run
+Last Run (#{run_at(last_run_doc).localtime.strftime('%A, %B %e %H:%M')})
 --------
-#{IntensitySummary.new(xml_docs(3.weeks.ago).last)}
+#{IntensitySummary.new(last_run_doc)}
 
 One Week Trailing Average
 ---------------------------
@@ -34,6 +34,10 @@ Three Week Trailing Average
 ---------------------------
 #{IntensitySummary.new(xml_docs(3.weeks.ago))}
 MSG
+  end
+
+  def last_run_doc
+    xml_docs(3.weeks.ago).last
   end
 
   def xml_docs(since)
