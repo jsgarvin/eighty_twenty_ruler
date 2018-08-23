@@ -2,7 +2,7 @@ class Ruling
   PUSHOVER_URL = 'https://api.pushover.net/1/messages.json'
 
   def call
-    #puts full_summary
+    return if last_run_doc.nil?
     HTTP.post(PUSHOVER_URL, params: pushover_payload)
   end
 
