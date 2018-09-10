@@ -30,9 +30,9 @@ One Week Trailing Average
 ---------------------------
 #{IntensitySummary.new(xml_docs(1.week.ago))}
 
-Three Week Trailing Average
+Four Week Trailing Average
 ---------------------------
-#{IntensitySummary.new(xml_docs(3.weeks.ago))}
+#{IntensitySummary.new(xml_docs(4.weeks.ago))}
 MSG
   end
 
