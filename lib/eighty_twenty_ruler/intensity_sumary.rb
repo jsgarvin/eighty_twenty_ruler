@@ -56,10 +56,10 @@ MSG
   end
 
   def moderate_intensity_threshold_bpm
-    (EightyTwentyRuler.config.lactate_threshold * 0.89).ceil
+    (EightyTwentyRuler.config.lactate_threshold * 0.91).ceil
   end
 
   def high_intensity_threshold_bpm
-    (EightyTwentyRuler.config.lactate_threshold * 0.95).ceil
+    (EightyTwentyRuler.config.lactate_threshold * 0.93).ceil
   end
 end
